@@ -1,0 +1,239 @@
+.greetingBox {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.animationBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.greetingTitle {
+    font-weight: bold !important;
+    margin-bottom: 10px;
+    color: #e1e1e1;
+}
+
+.greetingTextWrapper {
+    height: 150px;
+    width: 550px;
+    max-width: 100%;
+}
+
+.animationText {
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(to right, #8750f7 0%, #fff 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: inline-block;
+}
+
+.greetingDescription {
+    margin-bottom: 30px;
+    width: 450px;
+    max-width: 100%;
+}
+
+.greetingResumeBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cvIcon {
+    margin-left: 5px;
+}
+
+.iconBtnSection {
+    display: flex;
+    gap: 15px;
+}
+
+.iconBtn {
+    border: 1px solid #8750f7 !important;
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.iconBtn:hover {
+    background: #8750f7 !important;
+}
+
+.iconBtn span {
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.profileImageBox {
+    position: relative;
+}
+
+.profileImageBox:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: linear-gradient(260deg, #8750f7 0%, rgba(115, 67, 210, 0) 100%);
+    filter: blur(150px);
+    margin-left: -5%;
+    margin-bottom: -5%;
+}
+
+.profileImageBox img {
+    /*width: 290px;*/
+    max-width: 80%;
+    border-radius: 40px;
+    border: 2px solid #2a1454;
+    transform: rotate(4.29deg);
+    -webkit-transition: 0.3s;
+}
+
+.profileDesktopImg img:hover {
+    border: 2px solid #8750f7;
+    transform: rotate(0);
+}
+
+.greetingFooter {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.greetingBoxFooter {
+    /*width: 50%;*/
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.greetingFooterTitle {
+    font-size: 60px;
+    line-height: 1;
+    font-weight: bold;
+    color: #E1E1E1FF;
+}
+
+.greetingBoxFooter span {
+    font-size: 15px;
+    width: 100px;
+}
+
+
+/*XS*/
+@media (min-width: 0px) {
+    .profileMobileImg {
+
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        max-width: 90%;
+    }
+    .profileMobileImg  img{
+        border: 2px solid #8750f7;
+    }
+
+    .greetingFooterTitle {
+        font-size: 35px;
+    }
+
+    .greetingBoxFooter span {
+        font-size: 11px;
+    }
+
+}
+
+/*SM*/
+@media (min-width: 600px) {
+    .greetingFooterTitle {
+        font-size: 50px;
+    }
+
+    .greetingBoxFooter span {
+        font-size: 13px;
+    }
+}
+
+/*MD*/
+@media (min-width: 900px) {
+    .profileMobileImg {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .profileDesktopImg {
+        display: none;
+    }
+
+    .contentSection {
+        margin: 0 auto;
+    }
+
+    .greetingTextWrapper {
+        width: 100%;
+    }
+
+    .animationText {
+        font-size: 40px;
+    }
+
+    .greetingTitle {
+        font-size: 30px;
+    }
+
+    .greetingDescription {
+        width: 100%;
+    }
+
+    .greetingResumeBox {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .greetingFooter{
+        flex: 0 0 auto;
+        flex-wrap: wrap;
+    }
+    .greetingBoxFooter{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .greetingBoxFooter span{
+        text-align: center;
+
+    }
+
+
+
+
+}
+
+
+/*LG*/
+@media (min-width: 1200px) {
+
+}
+
+/*XL*/
+@media (min-width: 1536px) {
+
+}
+
+
+

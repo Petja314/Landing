@@ -1,0 +1,86 @@
+.aboutMeBox {
+    background: #050709;
+    margin-top: 50px;
+}
+
+.container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.aboutMeTitle {
+    font-weight: bold !important;
+    background: linear-gradient(to right, #8750f7 0%, #fff 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+}
+
+.shortDescription {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.aboutMeSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #8750f7;
+    padding: 40px;
+    transition: opacity 300ms, transform 400ms;
+}
+
+
+.aboutMeSection:hover {
+    background-image: linear-gradient(to right, #8750f7 0%, #2a1454 100%);
+    color: #fff;
+    transform: translate3d(0, 0.3em, 0);
+}
+
+.title {
+
+
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.title span {
+    font-size: 20px;
+    color: #8750f7;
+    text-align: center;
+    padding-right: 10px
+}
+
+.description {
+    width: 50%;
+}
+
+
+/*SM*/
+@media (max-width: 600px) {
+    .title {
+        font-size: 20px;
+    }
+    .title span {
+        font-size: 15px;
+    }
+}
+
+/*MD*/
+@media (max-width: 900px) {
+    .aboutMeSection {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .title {
+        padding-bottom: 10px;
+    }
+
+}
+

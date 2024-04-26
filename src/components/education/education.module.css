@@ -1,0 +1,96 @@
+.educationBox {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #0f0715;
+}
+
+.educationWrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.educationColumn {
+    width: 50%;
+}
+
+.educationTitle {
+    padding-bottom: 30px;
+    margin: 0 auto;
+    font-weight: bold !important;
+    background: linear-gradient(to right, #8750f7 0%, #fff 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.educationIcon {
+    font-size: 40px !important;
+    color: #a188d0;
+    margin-right: 10px;
+}
+
+
+.educationPaper {
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-radius: 20px !important;
+    color: #fff !important;
+    width: 100%;
+
+    background-size: 200%;
+    background-image: linear-gradient(to right, #8750f7 0%, #2a1454 51%, #8750f7 100%);
+    transition: 0.4s !important;
+}
+
+
+.educationYear {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+
+}
+
+.educationPaper span {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase
+}
+
+
+/*XS*/
+@media (min-width: 0px) {
+}
+
+/*SM*/
+@media (min-width: 600px) {
+
+}
+
+/*MD*/
+@media (max-width: 800px) {
+    .educationColumn{
+        width: 100%;
+    }
+    .educationWrapper {
+        flex-wrap: wrap;
+    }
+    .educationPaper span{
+        font-size: 20px;
+    }
+    .educationYear{
+        font-size: 15px;
+    }
+}
+
+/*LG*/
+@media (min-width: 1200px) {
+}
+
+/*XL*/
+@media (min-width: 1536px) {
+}
+
+

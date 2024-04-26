@@ -1,0 +1,15 @@
+.footerBox {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #0f0715;
+}
+
+.footerDesc {
+    font-size: 14px;
+    text-align: center;
+}
+
+.footerDesc {
+    color: #8750f7;
+    font-weight: bold;
+}

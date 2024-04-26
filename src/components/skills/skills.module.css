@@ -1,0 +1,61 @@
+.skillsBox {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: #0f0715;
+}
+
+.skillsDescription {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 50px
+}
+
+
+.skillsBoxWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14%;
+    justify-content: space-evenly;
+    padding-bottom: 70px;
+}
+
+.skillsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-top: 30px;
+}
+
+
+.skillsPaperSection {
+    padding: 40px 15px 40px;
+    background: #140c1c !important;
+    border-radius: 25px !important;
+    width: 140px;
+    height: 140px;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 0.6s !important;
+}
+
+.skillsPaperSection:hover {
+    background: #2a1454 !important;
+    border: 1px solid #8750f7;
+    transition: 0.3s !important;
+    transform: scale(1.1) !important;
+}
+
+.skillsPaperSection img {
+    max-width: 60px;
+    width: 100%;
+}
+
+.skillsTitle {
+
+    color: #8750f7;
+    padding-top: 10px;
+}
+
