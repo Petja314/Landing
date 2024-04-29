@@ -10,7 +10,8 @@
 }
 
 .educationColumn {
-    width: 50%;
+    margin: 0 auto;
+    width: 70%;
 }
 
 .educationTitle {
@@ -38,18 +39,19 @@
     border-radius: 20px !important;
     color: #fff !important;
     width: 100%;
-
     background-size: 200%;
     background-image: linear-gradient(to right, #8750f7 0%, #2a1454 51%, #8750f7 100%);
     transition: 0.4s !important;
 }
 
+.educationPaper{
+    /*border: 1px solid red;*/
+}
 
 .educationYear {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 8px;
-
 }
 
 .educationPaper span {

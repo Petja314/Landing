@@ -1,12 +1,11 @@
 import React from 'react';
-import {AppBar, Avatar, Box, Button, Container, IconButton, Toolbar, Typography} from "@mui/material";
+import {Box, Button, Container, IconButton, Typography} from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import me from "../../assets/images/greeting/me.png"
 import "../../App.css"
-import {TypeAnimation} from "react-type-animation";
 import {Background} from "../particles/Background";
 import styles from "./greeting.module.css"
 
@@ -21,12 +20,6 @@ type ContactIconsBoxType ={
 }
 
 const Greeting = () => {
-    const greetingBottomInfo : GreetingInfoType[] = [
-        {title: "14", description: "Years of Experience"},
-        {title: "50+", description: "Project Completed"},
-        {title: "1.5K", description: "Happy Clients"},
-        {title: "14", description: "Years of Experience"},
-    ]
 
     const contactIconsBox : ContactIconsBoxType[]  = [
         {icon : <GitHubIcon/>,          link : "https://github.com/Petja314"} ,
@@ -57,14 +50,16 @@ const Greeting = () => {
 
 
                     <Box className={styles.greetingDescription}>
-                        I break down complex user experinece problems to create integritiy focussed solutions that connect billions of people
+                        I excel at dissecting intricate user experience challenges, leveraging React to architect solutions that seamlessly integrate design and functionality.
                     </Box>
 
                     <Box className={styles.greetingResumeBox}>
-                        <Button>
+                        <Button onClick={() => window.location.href = 'https://drive.google.com/file/d/1E0F5rGaDlsjcjWcP3On-2cgM2hKumjpy/view'} >
                             GET RESUME
                             <DownloadIcon className={styles.cvIcon}/>
                         </Button>
+
+
                         <Box className={styles.iconBtnSection}>
                             {
                                 contactIconsBox.map((item, index) => (
@@ -86,18 +81,6 @@ const Greeting = () => {
                 </Box>
             </Box>
 
-            {/*--------------------------------------------------------------------------------------------------------------------------------------------*/}
-
-            <Box className={styles.greetingFooter}>
-                {
-                    greetingBottomInfo.map((item, index) => (
-                        <Box key={index} className={styles.greetingBoxFooter}>
-                            <Box className={styles.greetingFooterTitle}>{item.title}</Box>
-                            <span>{item.description}</span>
-                        </Box>
-                    ))
-                }
-            </Box>
         </Container>
 
 

@@ -20,7 +20,9 @@
 .SectionDescription {
     text-align: center;
     margin-top: 20px;
-    padding-bottom: 50px;
+    margin-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .projectWrapper {
@@ -28,6 +30,12 @@
     justify-content: center;
     gap: 50px;
 }
+
+.projectContainer{
+    /*border: 1px solid greenyellow;*/
+    width: 50%;
+}
+
 
 
 
@@ -103,6 +111,7 @@
 }
 
 .projectInfoBox {
+    /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,6 +183,12 @@
 @media (max-width: 900px) {
     .projectWrapper {
         flex-direction: column;
+    }
+    .projectContainer{
+        width: 100%;
+    }
+    .SectionDescription {
+        padding: 0px;
     }
 }
 

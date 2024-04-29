@@ -7,7 +7,10 @@
 .skillsDescription {
     text-align: center;
     margin-top: 20px;
-    padding-bottom: 50px
+    margin-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+
 }
 
 
@@ -59,3 +62,10 @@
     padding-top: 10px;
 }
 
+
+
+@media (max-width: 900px) {
+    .skillsDescription {
+        padding: 0px;
+    }
+}

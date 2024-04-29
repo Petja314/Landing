@@ -36,7 +36,7 @@ const Skills = () => {
                 <Typography variant={"h3"}>My Skills</Typography>
 
                 <Box className={styles.skillsDescription}>
-                    We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.
+                    Crafting dynamic and scalable UIs with React.js, React Hooks, Context API, and component-driven development for engaging user experiences.
                 </Box>
 
 

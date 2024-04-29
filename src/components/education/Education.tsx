@@ -12,30 +12,20 @@ type EducationType = {
     title: string
     description: string
 }
-type ExperienceType = {
-    year: string
-    title: string
-    description: string
-}
+
 const Education = () => {
     const education : EducationType[] = [
-        {year: "2020 - 2023", title: "PROGRAMMING COURSE", description: "Harverd University"},
-        {year: "2020 - 2023", title: "PROGRAMMING COURSE", description: "Harverd University"},
-        {year: "2020 - 2023", title: "PROGRAMMING COURSE", description: "Harverd University"},
-        {year: "2020 - 2023", title: "PROGRAMMING COURSE", description: "Harverd University"},
+        {year: "2012 - 2016", title: "COMPUTER SCIENCE", description: "Rēzekne Technical College, Latvia"},
+        {year: "2022 - 2022", title: "JS HTML CSS COURSE", description: "iTGid's Front-End courses, covering JS, HTML5, CSS3."},
+        {year: "2022 - 2024", title: "FRONT END COURSE", description: " IT-Incubator's Front End Courses, React.js, Redux, TypeScript, JS."},
     ]
-    const experience : ExperienceType[] = [
-        {year: "2020 - 2023", title: "PROGRAMMING COURSE", description: "Harverd University"},
-        {year: "2020 - 2023", title: "PROGRAMMING COURSE", description: "Harverd University"},
-        {year: "2020 - 2023", title: "PROGRAMMING COURSE", description: "Harverd University"},
-        {year: "2020 - 2023", title: "PROGRAMMING COURSE", description: "Harverd University"},
-    ]
+
 
 
     return (
         <Box className={styles.educationBox} id={'Education'}>
             <Container>
-                <Box className={styles.educationWrapper}>
+                {/*<Box className={styles.educationWrapper}>*/}
                     <Box className={styles.educationColumn}>
                         <Typography variant={"h3"}>
                             <SchoolIcon className={styles.educationIcon}/>Education
@@ -43,7 +33,7 @@ const Education = () => {
                         <Box className={styles.educationSection}>
                             {
                                 education.map((item , index) => (
-                                    <Paper  key={index} className={styles.educationPaper}>
+                                    <Paper  key={index} className={styles.educationPaper} sx={{height : "150px"}} >
                                         <Box className={styles.educationYear}>{item.year}</Box>
                                         <Box component={'span'}>{item.title}</Box>
                                         <Box>{item.description}</Box>
@@ -53,23 +43,6 @@ const Education = () => {
                         </Box>
                     </Box>
 
-                    <Box className={styles.educationColumn}>
-                        <Typography variant={"h3"}>
-                            <EngineeringIcon className={styles.educationIcon}/>Experience
-                        </Typography>
-                        <Box className={styles.educationSection}>
-                            {
-                                experience.map((item,index) => (
-                                    <Paper key={index} className={styles.educationPaper}>
-                                        <Box className={styles.educationYear}>{item.year}</Box>
-                                        <Box component={'span'}>{item.title}</Box>
-                                        <Box>{item.description}</Box>
-                                    </Paper>
-                                ))
-                            }
-                        </Box>
-                    </Box>
-                </Box>
             </Container>
         </Box>
     );

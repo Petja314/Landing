@@ -16,13 +16,21 @@
     text-align: center;
 }
 
+
+/*------------------------------------------*/
+
 .shortDescription {
     text-align: center;
-    padding: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    /*border: 1px solid red;*/
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 
 .aboutMeSection {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,6 +70,7 @@
     .title {
         font-size: 20px;
     }
+
     .title span {
         font-size: 15px;
     }
@@ -80,6 +89,9 @@
 
     .title {
         padding-bottom: 10px;
+    }
+    .shortDescription {
+        padding: 0px;
     }
 
 }

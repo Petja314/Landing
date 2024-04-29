@@ -11,10 +11,10 @@ type AboutMeType = {
 }
 const AboutMe = () => {
     const aboutMe : AboutMeType[] = [
-        {number: "01", title: "Branding Design", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, eius exercitationem illo iste."},
-        {number: "02", title: "Branding Design", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, eius exercitationem illo iste."},
-        {number: "03", title: "Branding Design", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, eius exercitationem illo iste."},
-        {number: "04", title: "Branding Design", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut, eius exercitationem illo iste."},
+        {number: "01", title: "React Architecture", description: "Architected and implemented React-based projects from scratch, ensuring a consistent user engagement level through the  implementation of interactive features and performance optimizations."},
+        {number: "02", title: "Flexible Development", description: "Leveraged the usage of React.js and TypeScript concepts to implement generic components and functions to write reusable code that can operate on different data types, promoting flexibility and code reusability"},
+        {number: "03", title: "Seamless UI Design", description: "Integrated and utilized pre-built React libraries or UI frameworks such as Material UI to expedite development and create consistent UI elements"},
+        {number: "04", title: "REST API Integration", description: "Performed integrations with REST APIs to connect applications to different backend services, implementing error handling mechanisms to gracefully handle potential issues during API communication"},
     ]
     const [selectedInfo, setSelectedInfo] = useState<number>(0)
 
@@ -27,7 +27,7 @@ const AboutMe = () => {
 
 
                 <Box className={styles.shortDescription}>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque deserunt doloribus est in.
+                    A solution-focused Junior Front-end Developer specializing in React.js.Innovative, determined, and committed to delivering solutions that perform under pressure.
                 </Box>
 
                 <Box>

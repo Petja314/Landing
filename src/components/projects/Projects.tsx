@@ -3,11 +3,9 @@ import {Box, Container, IconButton, Paper, Typography} from "@mui/material";
 import "../../App.css"
 import web1 from "../../assets/images/portfolio/web1.png"
 import web2 from "../../assets/images/portfolio/web2.png"
-import NearMeIcon from '@mui/icons-material/NearMe';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import styles from "./projects.module.css"
 import GitHubIcon from "@mui/icons-material/GitHub";
-import {useNavigate} from "react-router-dom";
 
 
 type ProjectsType = {
@@ -25,10 +23,9 @@ type ProjectsType = {
 const projects : ProjectsType[] = [
     {
         title: "Mi Crypto",
-        description: "Mi Crypto offers a comprehensive suite of tools to effortlessly track, swap, and optimize your cryptocurrency investments.",
+        description: "A React-based project empowers users with cryptocurrency tracking, analytics, and portfolio management.",
         hoverTitle: "Crypto Project",
-        hoverDescription: "React-based application utilizing ...",
-        // hoverDescription : "React-based application utilizing Material UI and Firebase back end...",
+        hoverDescription: "React-based application utilizing MUI and Firebase...",
         img: web1,
         icon: <GitHubIcon/>,
         gitTitle: "Github",
@@ -37,10 +34,9 @@ const projects : ProjectsType[] = [
     },
     {
         title: "Social Network",
-        description: "React project enabling users to find friends, chat, ask an AI bot questions...",
+        description: "Geek community connections, with real-time chat, AI chatbot, and modern tech integration.",
         hoverTitle: "Geeks Network",
-        hoverDescription: "React-based application utilizing ...",
-        // hoverDescription : "Within this platform, users can discover and connect with new friends, engage in real-time chat conversations and much more.",
+        hoverDescription : "Discover, connect, chat, and more...",
         img: web2,
         icon: <GitHubIcon/>,
         gitTitle: "Github",
@@ -63,14 +59,14 @@ const Projects = () => {
                 <Typography variant={"h3"}>Recent Projects</Typography>
 
                 <Box className={styles.SectionDescription}>
-                    We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.
+                    In recent portfolio projects, I translate my ideas into captivating web experiences, inspiring myself and potential visitors.
                 </Box>
 
 
                 <Box className={styles.projectWrapper}>
                     {
                         projects.map((item, index) => (
-                            <Box key={index}>
+                            <Box key={index} className={styles.projectContainer} >
                                 <Paper className={styles.projectPaperSection} onClick={() => redirectToUrl(item.webLink)} >
                                     <Box className={styles.projectImg}>
                                         <img src={item.img} alt="project image"/>

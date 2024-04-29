@@ -4,7 +4,6 @@ import logo2 from "../../assets/images/logo/logo2.png"
 import "../../App.css"
 import styles from "./header.module.css"
 import MobileMenu from "./MobileMenu";
-import {Link} from "react-router-dom";
 
 export const Header = () => {
     const headerNavigation: string[] = ["About", "Skills", "Projects", "Education", "Contact"]
@@ -40,7 +39,7 @@ export const Header = () => {
                     </Box>
 
 
-                    <Button>Hire Me!</Button>
+                    <Button onClick={() => window.location.href = 'https://drive.google.com/file/d/1E0F5rGaDlsjcjWcP3On-2cgM2hKumjpy/view'}>Hire Me!</Button>
 
                     {/*MOBILE*/}
                     <MobileMenu headerNavigation={headerNavigation} sectionScrollHandler={sectionScrollHandler}/>
